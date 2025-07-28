@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+body{
+    background-color: black;
+}
+
 .main{
     background-image: url("assets/images/background.jpg");
     background-position: center center;
@@ -46,14 +50,16 @@ nav img{
     border-radius: 4px;
     position: relative;
     z-index: 5;
+    font-weight: bold;
 }
-.hero-para{
-    height: 100%;
+
+.hero{
+    height: calc(100% - 62px);
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    font-style:"Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    font-style:'poppins', sans-serif;
     color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
@@ -61,11 +67,49 @@ nav img{
     flex-direction: column;
     position: relative;
     z-index: 5;
+    gap: 20px;
+    padding: 0 23px;
+    text-align: center;
 
 }
 
 .para-bold{
     font-size: 24px;
     font-weight: 700;
+    font-weight: bold;
     line-height: 30px;
+    gap: 10px;
+    text-align: center;
+}
+
+.seperation{
+    background-color: red;
+    height: 2px;
+}
+
+input[type="email"] {
+  padding: 12px;
+  width: 250px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  box-sizing: border-box;
+  border: 1px solid rgba(246, 238, 238, 0.5);
+
+}
+    
+
+
+.submit{
+  background-color: #e50914;
+  font-size: 11px;
+  font-weight: 500;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+
 }
